@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="view_form_checkout_ext" model="ir.ui.view">
+    <field name="name">Library Checkout View EXT</field>
+    <field name="model">library.checkout</field>
+    <field name="inherit_id" ref="library_checkout.view_form_checkout"/>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="emprint"/>
+        </group>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_tree_checkout_ext" model="ir.ui.view">
+    <field name="name">Library Checkout View EXT</field>
+    <field name="model">library.checkout</field>
+    <field name="arch" type="xml">
+      <tree>
+          <field name="emprint" />
+      </tree>
+    </field>
+  </record>
+</odoo>

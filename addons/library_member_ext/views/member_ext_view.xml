@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="view_form_member_ext" model="ir.ui.view">
+    <field name="name">Library Member Form View EXT</field>
+    <field name="model">library.member</field>
+    <field name="inherit_id" ref="library_member.view_form_member"/>
+    <field name="arch" type="xml">
+      <form>
+        <group>
+          <field name="gender" widget="radio"/>
+          <field name="etat_civil" widget="selection" />
+        </group>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_tree_member_ext" model="ir.ui.view">
+    <field name="name">Library Member List View EXT</field>
+    <field name="model">library.member</field>
+    <field name="arch" type="xml">
+      <tree>
+          <field name="gender" />
+          <field name="etat_civil" />
+      </tree>
+    </field>
+  </record>
+</odoo>
